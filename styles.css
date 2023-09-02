@@ -1,0 +1,127 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+header {
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+header .logo img {
+    width: 100px;
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #232851;
+}
+
+.contacto {
+    background-color: #8B48BF;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+/* Estilos para el botón de contacto */
+.boton-contacto {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.seccion-alta {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.contenedor-imagen {
+    flex: 60%;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-texto {
+    flex: 40%;
+    max-width: 40%;
+    margin-right: 130px;
+}
+.contacto-2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #8B48BF;
+    border-radius: 50px;
+    padding: 15px;
+    float: right;
+}
+.contenedor-texto h1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #232851;
+    font-size: 50px; 
+    text-align: right;
+}
+
+.contenedor-texto h4 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+}
+.seccion-central {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #8B48BF;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.contenedor-h2 {
+    font-size: 25px;
+    flex: 60%;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-left: 10px;
+}
+
+.contenedor-h5 {
+    flex: 60%;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.contenedor-h2 h2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: white;
+}
+
+.contenedor-h5 h5 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: white; /* Color de texto blanco */
+}

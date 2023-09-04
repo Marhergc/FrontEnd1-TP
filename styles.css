@@ -10,6 +10,12 @@ header {
     align-items: center;
 }
 
+nav .menu-toggle {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
 /* Estilos para el logo */
 header .logo img {
     width: 100px;
@@ -31,6 +37,10 @@ nav ul li a {
     text-decoration: none;
     font-size: 12px;
     color: #232851;
+}
+
+nav .hamburger-icon {
+    display: none;
 }
 
 .contacto {
@@ -113,8 +123,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 80px;
-    margin-right: 90px;
+    padding-right: 40px;
     margin-left: 40px;
 }
 
@@ -160,8 +169,8 @@ nav ul li a {
 .seccion-01 h4,
 .seccion-02 h4,
 .seccion-03 h4 {
-    display: inline; /* Coloca los h1 y h4 en línea */
-    margin-right: 10px; /* Espacio entre h1 y h4 */
+    display: inline; 
+    margin-right: 10px; 
 }
 
 .seccion-01 p,
@@ -247,4 +256,102 @@ nav ul li a {
     width: 130px;
     margin-top: 20px;
     border: none;
+}
+
+@media (max-width: 480px) {
+    .contacto {
+        display: none;
+    }
+    .seccion-alta {
+        flex-direction: column; /* Cambia la dirección de flex a columna */
+    }
+    
+    .contenedor-imagen,
+    .contenedor-texto {
+        padding: 10px; 
+    }
+    
+    .boton-contacto {
+        display: block;
+    }
+    .contenedor-imagen,
+    .contenedor-texto {
+        flex: 1;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+/* Estilos para la imagen */
+    .contenedor-imagen img {
+        max-width: 100%;
+        height: auto;
+    }
+
+/* Estilos para el contenedor de texto */
+    .contenedor-texto {
+        margin: 0 auto;
+        font-size: 3vw; 
+        max-width: 100%;
+    }
+
+    .seccion-central {
+        background-color: #3CDDF3;
+        flex-direction: column;
+    }
+    .contenedor-h2, .contenedor-h5 {
+        width: 100%;
+        max-width: 90%; 
+        margin-right: 0; 
+        margin-left: 0;
+        padding-left: 20px;
+
+    }
+    .contenedor-h5 {
+        margin-right: 20px
+    }
+    .list-section1 {
+        flex-direction: column;
+    }
+    .seccion-01, .seccion-02 {
+        padding: 0;
+    }
+    .seccion-03 {
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+    .listas-completas {
+        width: 100%;
+    }
+    .list-section1 .seccion-01 h4,
+    .list-section1 .seccion-02 h4,
+    .listas-completas .seccion-03 h4 {
+        flex-grow: 1;
+        background-color: #d0abec;
+        width: calc(100% + 20px); 
+        margin-left: -10px; 
+        padding: 5px 20px 5px 10px; 
+        position: relative;
+        z-index: 1;
+        
+    }
+
+    .list-section1 h1,
+    .listas-completas .seccion-03 h1 {
+        margin: 0;
+        position: relative;
+        z-index: 2;
+    }
+    .tarjetas-container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tarjeta1, .tarjeta3 {
+        display: none;
+    }
+    .tarjeta2 {
+        background-color: white; 
+    }
 }

@@ -10,6 +10,10 @@ header {
     align-items: center;
 }
 
+.hamburger-icon {
+    display: none;
+}
+
 nav .menu-toggle {
     position: absolute;
     top: -9999px;
@@ -138,60 +142,74 @@ nav .hamburger-icon {
     font-weight: 200;
     color: white; 
 }
+/* Aqui comienza seccion listas-completas */
 
 .listas-completas {
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: #f2f2f2;
-    padding-bottom: 30px;
+    background-color: #f2f2f2 ;
 }
 
 .list-section1 {
     display: flex;
-    flex-wrap: wrap; /* Para que los elementos se envuelvan en filas si no caben en el ancho del contenedor */
 }
 
 .seccion-01,
-.seccion-02 {
+.seccion-02,
+.seccion-03 {
     flex: 1;
     margin: 10px;
-    padding: 20px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left; 
 }
 
-.seccion-03 {
-    background-color: #f2f2f2;
-    margin-left: 30%;
-    margin-right: 25%;
+.seccion-contenido {
+    margin-bottom: 10px;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
 }
 
-.seccion-01 h1,
-.seccion-02 h1,
-.seccion-03 h1,
-.seccion-01 h4,
-.seccion-02 h4,
-.seccion-03 h4 {
-    display: inline; 
+.seccion-01 img,
+.seccion-02 img,
+.seccion-03 img {
+    max-width: 100px; 
+    height: auto; 
     margin-right: 10px; 
 }
 
-.seccion-01 p,
-.seccion-02 p,
-.seccion-03 p {
-    color: #b6b9cf;
-    text-align: justify;
-    margin-left: 15%;
+.seccion-01 h4,
+.seccion-02 h4,
+.seccion-03 h4 {
+    color: black;
+    font-size: 14px; 
 }
 
-.seccion-01 h1,
-.seccion-02 h1,
-.seccion-03 h1 {
-    display: inline-block;
-    padding: 5px;
-    background-color: #8B48BF;
-    color: #fff;
-    border-radius: 40%;
-    width: 50px;
-    text-align: center;
+.listas-completas p {
+    margin-left: 80px;
+    color: rgb(196, 187, 187);
+    font-size: 14px;
 }
+
+.seccion-03 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #f2f2f2; 
+    text-align: left; 
+}
+
+.seccion-03 p {
+    margin-left: 42%; 
+    margin-right: 10%;
+}
+
+/* Aqui comienza la seccion de tarjetas */
 
 .best {
     text-align: center; 

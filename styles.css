@@ -282,6 +282,10 @@ nav .hamburger-icon {
         display: none;
     }
 
+    .hamburger-icon {
+        display: block;
+    } 
+
     header {
         display: flex;
         justify-content: space-between;
@@ -354,8 +358,12 @@ nav .hamburger-icon {
     .contenedor-h5 {
         margin-right: 20px
     }
+
+    /* Aqui comienza seccionlistas completas*/
     .list-section1 {
         flex-direction: column;
+        max-width: 100%;
+        width: 100%;
     }
     .seccion-01, .seccion-02 {
         padding: 0;
@@ -363,9 +371,16 @@ nav .hamburger-icon {
     .seccion-03 {
         margin-left: 10px;
         padding-right: 10px;
+        background-color: white;
+        align-items: flex-start;
+        padding-left: 0px;
+        margin-right: 0px;
     }
+    
     .listas-completas {
         width: 100%;
+        max-width: 100%;
+        background-color: white;
     }
     .list-section1 .seccion-01 h4,
     .list-section1 .seccion-02 h4,
@@ -373,10 +388,29 @@ nav .hamburger-icon {
         flex-grow: 1;
         background-color: #d0abec;
         width: calc(100% + 20px); 
-        margin-left: -10px; 
-        padding: 5px 20px 5px 10px; 
         position: relative;
         z-index: 1;
+        font-size: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+    .seccion-01 h4 {
+        padding-left: 30px;
+        margin-left: -25px;
+        padding-right: 80px;
+        margin-right: 0;
+    }
+    .seccion-02 h4 {
+        padding-left: 30px;
+        margin-left: -25px;
+        padding-right: 110px;
+        margin-right: 0;
+    }
+    .seccion-03 h4 {
+        padding-left: 30px;
+        margin-left: -25px;
+        padding-right: 60px;
+        margin-right: 0;
     }
 
     .list-section1 h1,
@@ -386,16 +420,38 @@ nav .hamburger-icon {
         z-index: 2;
     }
 
+    .seccion-01 img,
+    .seccion-02 img,
+    .seccion-03 img {
+        z-index: 2; 
+    }
+
+    .listas-completas p {
+        margin-left: 5%;
+    }
+
+/* Aquí comienza sección tarjetas*/
     .tarjetas-container {
         background-color: white;
         display: flex;
         flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
     }
     
     .tarjeta1, .tarjeta3 {
         display: none;
     }
     .tarjeta2 {
-        background-color: white; 
+        background-color: #f2f2f2;
+        width: 100%;
     }
+    .tarjeta2 img {
+        margin-top: 30px;
+    }
+    .tarjeta2 h3 {
+        margin-top: 0px;
+    }
+
 }

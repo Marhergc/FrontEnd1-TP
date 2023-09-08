@@ -276,6 +276,7 @@ nav .hamburger-icon {
     border: none;
 }
 
+/* Aquí comienza la media Query */
 @media (max-width: 480px) {
 
     nav {
@@ -284,6 +285,7 @@ nav .hamburger-icon {
 
     .hamburger-icon {
         display: block;
+        order: 2;
     } 
 
     header {
@@ -294,7 +296,7 @@ nav .hamburger-icon {
         }
     
     .logo img {
-        max-width: 100px; /* Ajusta el ancho máximo del logo según tus preferencias */
+        max-width: 100px; 
     }
     
     .hamburger-icon {
@@ -429,6 +431,13 @@ nav .hamburger-icon {
     .listas-completas p {
         margin-left: 5%;
     }
+
+    .seccion-01,
+    .seccion-02,
+    .seccion-03 {
+        display: block;
+}
+    
 
 /* Aquí comienza sección tarjetas*/
     .tarjetas-container {

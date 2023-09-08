@@ -453,5 +453,48 @@ nav .hamburger-icon {
     .tarjeta2 h3 {
         margin-top: 0px;
     }
+    .primera{
+        background-color: #3CDDF3;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+    .boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    .dentro {
+        background-color:#232C50;
+        color: #fff;
+    }
+
+    .termina {
+        flex-direction: column-reverse;
+        justify-content: center;
+        display: flex;
+    }
+
+   .logo {
+    order: 1;
+   }
+   .iconos {
+    order: 2;
+    justify-content: center;
+    margin-right: 10px;
+   }
+
+   .segunda {
+    justify-content: space-around;
+   }
+    input {
+        width: 300px;
+        height: 35px;
+        justify-content: center;
+        }
+    
 
 }

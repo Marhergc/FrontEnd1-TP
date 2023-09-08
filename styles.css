@@ -369,14 +369,22 @@ nav .hamburger-icon {
     }
     .seccion-01, .seccion-02 {
         padding: 0;
+        margin: 0px; 
     }
     .seccion-03 {
-        margin-left: 10px;
         padding-right: 10px;
         background-color: white;
         align-items: flex-start;
-        padding-left: 0px;
-        margin-right: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tarjeta2 p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .wide {
+        margin-bottom: 5%;
     }
     
     .listas-completas {

@@ -470,7 +470,7 @@ nav .hamburger-icon {
     .tarjeta2 h3 {
         margin-top: 0px;
     }
-    .primera{
+     .primera{
         background-color: #3CDDF3;
         flex-direction: column;
         justify-content: center;
@@ -490,28 +490,63 @@ nav .hamburger-icon {
     }
 
     .termina {
+        flex-direction: row-reverse;
         flex-direction: column-reverse;
         justify-content: center;
+        
+    }
+
+    .lista { 
         display: flex;
+        flex-direction: row;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding-top: 70px;
+        padding-bottom: -500px;
+    }
+
+    .lista .columna1 {
+        padding-right: 40px;
+    }
+    
+    label {
+        display: flex;
+        flex-direction: row;
+        margin: 25px;
+        position: absolute;
+        padding-top: 20px;
+
     }
 
    .logo {
     order: 1;
+    margin-left: 150px;
+    padding-bottom: 20px;
    }
+
+   .img {
+    padding-bottom: 25px;
+
+   }
+
    .iconos {
-    order: 2;
-    justify-content: center;
-    margin-right: 10px;
+    padding-left: 45px;
    }
 
    .segunda {
-    justify-content: space-around;
+    justify-content: left;
    }
-    input {
-        width: 300px;
-        height: 35px;
-        justify-content: center;
-        }
-    
 
+   input {
+    width: 300px;
+    height: 35px;
+    justify-content: center;
+    }
+
+    .final h5 {
+     position: absolute;
+     padding-top: 405px;
+     margin-left: 90px;
+    }
+    
+    
 }
